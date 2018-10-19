@@ -38,16 +38,14 @@ def main2():
 
         s = (0, 0, 255, 0, 0, 255,0, 0, 255,0, 0, 255,)
         n_count = defaultdict(int)
-        enough = set()
-        new_active = set()
-        window.clear()
-        for o in gen.active:
+        
+        for o in gen.active: #O(n)
             for n in neighbors(o, width//sz, height//sz):
                 n_count[n]+=1
 
         new_active = set()
 
-        for k in n_count:
+        for k in n_count: #O(n)
             c = n_count[k]
 
             if (k in gen.active and c in survive) or (k not in gen.active and c in born):
@@ -57,7 +55,7 @@ def main2():
                 batch.add(4, pyglet.gl.GL_QUADS, None, ('v2f', [x, y, x-w, y, x-w, y-h, x, y-h]), ('c3B', s))
 
         batch.draw()
-        pyglet.image.get_buffer_manager().get_color_buffer().save('out/'+str(frame)+'.png')
+        # pyglet.image.get_buffer_manager().get_color_buffer().save('out/'+str(frame)+'.png')
         frame += 1
 
         gen.active = new_active
@@ -68,7 +66,7 @@ def main2():
 
         pyglet.app.run()
     finally:
-        print(gen.active)
+        pass
 
 
 
