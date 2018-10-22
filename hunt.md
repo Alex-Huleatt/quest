@@ -224,3 +224,43 @@ Journal is coded, explains how the program works, shows "signal strength" (but w
 * Once close enough, program activates, "downloads" data
 
 
+# Revision 4
+
+Bad guy is a crazy terrorist dude part of crazy organization
+
+## Part 1: Andres T. Møller
+
+Starting items:
+* Backpack
+* Laptop
+* Dossier
+* Cell Phone
+
+1. Receive instructions to investigate Moller
+    * Possibly a puzzle to find location
+2. Moller is found dead, dying, or is killed.
+    * Last words (written or spoken), are riddle
+3. A coded journal, iPhone, and weird `PUZZLE`
+    * Phone can be unlocked with thumbprint OR code in `PUZZLE`
+4. `PUZZLE` isn't important to solve yet.
+5. Report to command.
+
+Loot:
+
+* Journal
+* iPhone
+* `PUZZLE`
+* Riddle
+ 
+## Part 2: The first location
+
+* Location is result of riddle
+* Upon arriving, phone does thing. (Vibrate and message)
+* Signal strength meter becomes visible
+
+## Part 3: The other locations
+
+* Each location is result of riddle
+* Handful of different locations
+
+
